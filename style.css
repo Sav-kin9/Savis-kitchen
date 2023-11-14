@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: lightgray;
+}
+
+/* HEADER */
+
+.header{
+    width: 100vw;
+    height: 94vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2), rgba(0,0,0,0.6), rgba(0,0,0,0.3)) ,url("img/header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 95%);
+}
+
+/* navbar */
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    padding: 1rem 1.8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    text-decoration: none;
+    color: gold;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.btn a{
+    text-decoration: none;
+    color: #fff;
+    background-color: gold;
+    border: none;
+    border-radius: 50px;
+    padding: 0.7rem 1.5rem;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    transition: 0.2s;
+}
+.btn a:hover{
+    color: blueviolet;
+}
+
+/* navlinks */
+
+.navlinks{
+    width: 305px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navlinks ul{
+    list-style: none;
+    padding: 2rem;
+}
+.navlinks ul li{
+    margin: 20px;
+}
+.navlinks ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+}
+.hamburger{
+    display: none;
+}
+/* headerbody */
+
+.headerbody{
+    margin-top: 40px;
+    padding: 3rem 1rem;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+.headerbody h3{
+    font-size: 50px;
+    letter-spacing: 10px;
+    margin: 20px auto;
+    color: #fff;
+}
+.headerbody .to{
+    font-size: 20px;
+    margin: 20px auto;
+}
+.headerbody h1{
+    font-size: 40px;
+    margin: 20px auto;
+}
+.headerbody .btn{
+    margin-top: 30px;
+}
+.headerbody .motto{
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+
+@media screen and (min-width:768px) {
+    .header{
+    height: 74vh;
+}
+    .hamburger{
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        overflow: hidden;
+    }
+
+/* hamburger */
+
+    .hamburger .i{
+        width: 10px;
+        height: 10px;
+        margin: 1px;
+        border-radius: 100%;
+        background-color: gold;
+    }
+    /* .hamburger .i:hover{
+        right:0;
+    } */
+    /* .headerbodyimg{
+        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        box-shadow: 10px 5px 5px rgba(0,0,0,0.6);
+    }
+    .headerbodyimg img{
+        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    } */
+
+}
+
+/* services */
+
+.services{
+    margin-top: 1rem;
+    padding: 2rem;
+    width: 100%;
+    height: 70vh;
+    text-align: center;
+    color: #000;
+    display: block;
+}
+
+/* h3/p */
+
+h3{
+    font-size: 30px;
+    color: #000;
+}
+p{
+    font-size: 10px;
+}
+h3,p{
+    width: 100%;
+    text-align: center;
+}
+.services .services_header h3{
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+}
+.services .services_header p{
+    font: 16px;
+}
+.cards{
+    width: 100%;
+    height: 45vh;
+    max-height: 60vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cards1{
+    width: 30%;
+    max-width: 45vh;
+    max-height: 35vh;
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url("img/chad-montano-MqT0asuoIcU-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    height: 80%;
+    border-radius: 30px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+}
+#about{
+    margin-bottom: 4rem;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    min-height: 70vh;
+    background-color: rgba(28, 35, 42);
+    color: #fff;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+}
+.footer h1{
+    color: gold;
+    font-size: 28px;
+}
+.footer address{
+    margin: 1rem 0rem;
+}
+.footer p{
+    width: 100%;
+    text-align: left;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    margin: .5em;
+}
+.footer ul{
+    list-style: none;
+    margin: .5em;
+}
