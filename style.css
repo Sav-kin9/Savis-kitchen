@@ -7,6 +7,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    width: 100vw;
     overflow-x: hidden;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background: lightgray;
@@ -16,7 +17,8 @@ body{
 
 .header{
     width: 100vw;
-    height: 84vh;
+    min-height: 85vh;
+    padding-bottom: 1rem;
     background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2), rgba(0,0,0,0.6), rgba(0,0,0,0.3)) ,url("img/header.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -177,6 +179,13 @@ body{
 .services .cards .a:hover{
     transform: translate(-2px, -3px);
 }
+.services .cards .a p{
+    width: 100%;
+    transition: 0.3s;
+}
+.services .cards .a:hover p{
+    transform: scale(2);
+}
 /* h3/p */
 
 h3{
@@ -230,12 +239,15 @@ h3,p{
     box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
 }
 #about{
+    width: 100%;
     margin-bottom: 4rem;
 }
 .b p{
     transition: 0.2s ease-out;
 }
-.b p:hover{
+.b:hover p{
+    font-weight: 400;
+    line-height: 10px;
     transform: scale(1.05);
 }
 
@@ -282,6 +294,13 @@ h3,p{
     font-size: 12px;
     text-align: center;
     line-height: 25px;
+}
+.bottom h6 nav{
+    padding: 0;
+    margin: 0;
+}
+.bottom h6 nav:hover{
+    color: gold;
 }
 .footer .bottom p{
     font-size: 10px;
